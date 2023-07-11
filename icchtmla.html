@@ -18,7 +18,7 @@
 		<dt><b>Confirmar alterações</b>
 		<dd> Ao adicionar os arquivos,você precisa confirmar as alterações. Use o comando <b>"git commit -m "mensagem do commit""</b> para criar um commit com uma mensagem descritiva das alterações feitas. <i>a mensagem do commit é utilizada apenas para dar um nome para alteração feita.</i></dd>
 		<dt><b>Confirmar Commit</b>
-		<dd> confirmando as alterações, o usuario precisa utilizar o comando <b>push</b> para enviar as atualização do commit, usando um terminal ou Prompt de comando digite <b>git push</b> após terminar as fases acima.
+		<dd> Confirmando as alterações, o usuario precisa utilizar o comando <b>push</b> para enviar as atualização do commit, usando um terminal ou Prompt de comando digite <b>git push</b> após terminar as fases acima.
 	</dl>
 	<style>
 		mark{
@@ -30,60 +30,104 @@
 	
 	<p>Para conseguir fazer as ações acima, aqui vai algumas explicações de <mark>comandos</mark> importantes e auxiliares.</p>
 	<table>
-	<tr>
-	<th> Comandos </th>
-	<th> Descrição </th>
-	</tr>
-	<tr>
-	
-	<td><b>Init:</b></td>
-	<td>Cria um novo repositório Git vazio no diretório atual.</td>
-	<td><b>Clone:</b></td>
-	<td>Cria uma cópia de um repositório Git existente em um novo diretório. É usado para obter uma cópia local de um repositório remoto.</td>
-	<td><b>Branch:</b></td>
-	<td>Lista, cria ou exclui branches (ramificações) no repositório. Branches são usados para desenvolver recursos isolados um do outro</td>
-	<td><b>Checkout:</b></td>
-	<td>Alterna para um branch específico ou restaura arquivos do diretório de trabalho.</td>
-	<td><b>Status:</b></td>
-	<td>Exibe o status atual do repositório, mostrando as alterações realizadas nos arquivos.</td>
-	<td><b>Diff:</b></td>
-	<td>Mostra as diferenças entre o conteúdo dos arquivos no diretório de trabalho e as alterações confirmadas (commits) no repositório.</td>
-	<td><b>Add:</b></td> 
-	<td>Adiciona alterações no diretório de trabalho ao índice (staging area), preparando-as para o próximo commit.</td>
-	<td><b>Commit:</b></td>
-	<td>Grava as alterações adicionadas ao repositório, criando um novo commit com uma mensagem descritiva.</td>
-	<td><b>Push:</b></td>
-	<td>Envia os commits locais para um repositório remoto especificado. É usado para enviar as alterações para compartilhamento com outros colaboradores.</td>
-	<td><b>Pull:</b></td>
-	<td>Obtém as alterações de um repositório remoto e as mescla com o branch atual.</td>
-	<td><b>Revert:</b></td>
-	<td>Desfaz um commit específico, criando um novo commit com as alterações revertidas.</td>
-	<td><b>Merge:</b></td>
-	<td>Combina as alterações de um branch com outro branch ativo.</td>
-	<td><b>Stash:</b></td>
-	<td>Armazena as alterações atuais em um local temporário, permitindo alternar para outro branch sem precisar fazer um commit das alterações incompletas.</td>
-	<td><b>rm:</b></td>
-	<td>Remove arquivos do diretório de trabalho e do controle de versão do Git.</td>
-	<td><b>config:</b></td>
-	<td>Configura as opções do Git, como nome de usuário, endereço de e-mail, entre outros.</td>
-	<td><b>Reset:</b></td>
-	 Desfaz as alterações em um arquivo, commit ou branch específico. Pode ser usado para mover o branch atual para um commit anterior.</td>
-	<td><b>Remote:</b></td> 
-	<td>Gerencia repositórios remotos, permitindo adicionar, renomear ou remover conexões com repositórios remotos.</td>
-	<td><b>Fetch:</b></td>
-	<td>Obtém as alterações de um repositório remoto sem mesclá-las com o branch atual.</td>
-	<td><b>Show:</b></td>
-	<td>Mostra informações sobre um commit específico, como as alterações realizadas.</td>
-	<td><b>Help:</b></td>
-	<td>Exibe a documentação de ajuda do Git ou informações sobre um comando específico.</td>
-	<td><b>Rebase:</b></td>
-	<td>Move ou combina commits de um branch com outro, reescrevendo a história do projeto.</td>
-	<td><b>Blame:</b></td>
-	<td>Mostra quem modificou cada linha de um arquivo, exibindo o autor e o commit correspondente.</td>
-	<td><b>Tag:</b></td>
-	<td>Marca um ponto específico em um histórico de commits, geralmente usado para marcar versões estáveis do projeto.</td>
-	 </tr>
-	 </table>
+  <tr>
+    <th>Comandos</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td><b>Init:</b></td>
+    <td>Cria um novo repositório Git vazio no diretório atual.</td>
+  </tr>
+  <tr>
+    <td><b>Clone:</b></td>
+    <td>Cria uma cópia de um repositório Git existente em um novo diretório. É usado para obter uma cópia local de um repositório remoto.</td>
+  </tr>
+  <tr>
+    <td><b>Branch:</b></td>
+    <td>Lista, cria ou exclui branches (ramificações) no repositório. Branches são usados para desenvolver recursos isolados um do outro.</td>
+  </tr>
+  <tr>
+    <td><b>Checkout:</b></td>
+    <td>Alterna para um branch específico ou restaura arquivos do diretório de trabalho.</td>
+  </tr>
+  <tr>
+    <td><b>Status:</b></td>
+    <td>Exibe o status atual do repositório, mostrando as alterações realizadas nos arquivos.</td>
+  </tr>
+  <tr>
+    <td><b>Diff:</b></td>
+    <td>Mostra as diferenças entre o conteúdo dos arquivos no diretório de trabalho e as alterações confirmadas (commits) no repositório.</td>
+  </tr>
+  <tr>
+    <td><b>Add:</b></td>
+    <td>Adiciona alterações no diretório de trabalho ao índice (staging area), preparando-as para o próximo commit.</td>
+  </tr>
+  <tr>
+    <td><b>Commit:</b></td>
+    <td>Grava as alterações adicionadas ao repositório, criando um novo commit com uma mensagem descritiva.</td>
+  </tr>
+  <tr>
+    <td><b>Push:</b></td>
+    <td>Envia os commits locais para um repositório remoto especificado. É usado para enviar as alterações para compartilhamento com outros colaboradores.</td>
+  </tr>
+  <tr>
+    <td><b>Pull:</b></td>
+    <td>Obtém as alterações de um repositório remoto e as mescla com o branch atual.</td>
+  </tr>
+  <tr>
+    <td><b>Revert:</b></td>
+    <td>Desfaz um commit específico, criando um novo commit com as alterações revertidas.</td>
+  </tr>
+  <tr>
+    <td><b>Merge:</b></td>
+    <td>Combina as alterações de um branch com outro branch ativo.</td>
+  </tr>
+  <tr>
+    <td><b>Stash:</b></td>
+    <td>Armazena as alterações atuais em um local temporário, permitindo alternar para outro branch sem precisar fazer um commit das alterações incompletas.</td>
+  </tr>
+  <tr>
+    <td><b>Rm:</b></td>
+    <td>Remove arquivos do diretório de trabalho e do controle de versão do Git.</td>
+  </tr>
+  <tr>
+    <td><b>Config:</b></td>
+    <td>Configura as opções do Git, como nome de usuário, endereço de e-mail, entre outros.</td>
+  </tr>
+  <tr>
+    <td><b>Reset:</b></td>
+    <td>Desfaz as alterações em um arquivo, commit ou branch específico. Pode ser usado para mover o branch atual para um commit anterior.</td>
+  </tr>
+  <tr>
+    <td><b>Remote:</b></td>
+    <td>Gerencia repositórios remotos, permitindo adicionar, renomear ou remover conexões com repositórios remotos.</td>
+  </tr>
+  <tr>
+    <td><b>Fetch:</b></td>
+    <td>Obtém as alterações de um repositório remoto sem mesclá-las com o branch atual.</td>
+  </tr>
+  <tr>
+    <td><b>Show:</b></td>
+    <td>Mostra informações sobre um commit específico, como as alterações realizadas.</td>
+  </tr>
+  <tr>
+    <td><b>Help:</b></td>
+    <td>Exibe a documentação de ajuda do Git ou informações sobre um comando específico.</td>
+  </tr>
+  <tr>
+    <td><b>Rebase:</b></td>
+    <td>Move ou combina commits de um branch com outro, reescrevendo a história do projeto.</td>
+  </tr>
+  <tr>
+    <td><b>Blame:</b></td>
+    <td>Mostra quem modificou cada linha de um arquivo, exibindo o autor e o commit correspondente.</td>
+  </tr>
+  <tr>
+    <td><b>Tag:</b></td>
+    <td>Marca um ponto específico em um histórico de commits, geralmente usado para marcar versões estáveis do projeto.</td>
+  </tr>
+</table>
+
 	 
 	
 	
